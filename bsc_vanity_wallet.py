@@ -14,7 +14,6 @@ except ImportError:
     print("Missing dependency. Install it with:\n    pip install eth-account --break-system-packages")
     sys.exit(1)
 
-
 HEX_CHARS = set("0123456789abcdefABCDEF")
 
 
