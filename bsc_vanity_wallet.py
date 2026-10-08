@@ -161,7 +161,7 @@ def main():
         save = input("\nSave to a local file? (y/N): ").strip().lower()
         if save == "y":
             filename = f"vanity_wallet_{result['address'][2:10]}.txt"
-            path = os.path.join("/mnt/user-data/outputs", filename)
+            path = os.path.join(os.getcwd(), filename)
             with open(path, "w") as f:
                 f.write(f"Address: {result['address']}\n")
                 f.write(f"Private Key: {result['private_key']}\n")
